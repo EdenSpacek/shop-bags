@@ -1,6 +1,7 @@
 import { Box, Button, Container, ThemeProvider, Typography } from "@mui/material";
 import Appbar from "./components/Appbar";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer/Footer";
 import Products from "./components/Products/Products";
 import Promotion from "./components/promotions/Promotion";
 import theme from "./styles/theme";
@@ -16,6 +17,7 @@ function App() {
           <Typography variant="h4">Our Products</Typography>
         </Box>
         <Products/>
+        <Footer/>
       </Container>
     </ThemeProvider>
   );
