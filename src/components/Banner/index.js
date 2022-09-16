@@ -5,13 +5,13 @@ import {
   BannerContent,
   BannerDescription,
   BannerImage,
+  BannerShopButton,
   BannerTitle,
 } from "../../styles/banner";
-import theme from "../../styles/theme";
 import img from '../../images/banner/banner.png'
 
 const Banner = () => {
-  const them = useTheme();
+  const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <BannerContainer>
@@ -28,6 +28,7 @@ const Banner = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum
         </BannerDescription>
+        <BannerShopButton color="primary">Show Now</BannerShopButton>
       </BannerContent>
     </BannerContainer>
   );

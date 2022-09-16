@@ -21,4 +21,5 @@ export const MessageText = styled(Typography)(({ theme }) => ({
   },
   color: Colors.white,
   fontSize: "1.5rem",
+  textAlign: "center",
 }));
