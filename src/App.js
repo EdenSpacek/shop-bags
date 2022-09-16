@@ -1,5 +1,6 @@
 import { Button, Container, ThemeProvider } from "@mui/material";
 import Appbar from "./components/Appbar";
+import Banner from "./components/Banner";
 import theme from "./styles/theme";
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Container maxWidth="xl">
         <Appbar/>
-        <Button variant="contained">Test</Button>
+        <Banner/>
       </Container>
     </ThemeProvider>
   );
